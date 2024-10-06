@@ -1,0 +1,11 @@
+{
+  "$schema": "https://json.schemastore.org/tsconfig",
+  "display": "Config for CJS",
+  "extends": "./tsconfig.base.json",
+  "compilerOptions": {
+    "composite": true,
+    "target": "ES6",
+    "module": "CommonJS",
+    "moduleResolution": "Node"
+  }
+}

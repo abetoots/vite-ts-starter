@@ -1,0 +1,22 @@
+{
+  "$schema": "https://json.schemastore.org/tsconfig",
+  "extends": "./tooling/typescript/tsconfig.esm.json",
+  "compilerOptions": {
+    "composite": true,
+    "declarationDir": "dist/types",
+    "outDir": "dist",
+    "rootDir": "./",
+    "baseUrl": "./",
+    "declaration": true,
+    "declarationMap": true,
+
+    /* Types */
+    "types": ["vitest/globals", "vitest"],
+
+    "paths": {
+      "@/lib/*": ["./src/lib/*"]
+    }
+  },
+  "include": ["src"],
+  "references": [{ "path": "./tsconfig.tooling.json" }]
+}

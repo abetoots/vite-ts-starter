@@ -1,0 +1,44 @@
+{
+  "$schema": "https://json.schemastore.org/tsconfig",
+  "display": "Default",
+  "compilerOptions": {
+    // [ Basics ]
+    "strict": true,
+    // "checkJs": true,
+    "sourceMap": true,
+    "importHelpers": true,
+    // "removeComments": true,
+    // "rootDir": "./",
+    // "baseUrl": "./",
+    // "declaration": true,
+    // "declarationMap": true,
+    // "declarationDir": "types",
+
+    // [ Additional Checks | Linting ]
+    "noUnusedLocals": true,
+    "noImplicitReturns": true,
+    // "noUnusedParameters": true,
+    "noImplicitOverride": true,
+    "allowUnreachableCode": false,
+    "noUncheckedIndexedAccess": true,
+    "noFallthroughCasesInSwitch": true,
+    "noPropertyAccessFromIndexSignature": false,
+    // [ Module Resolution ]
+    "esModuleInterop": true,
+    "resolveJsonModule": true,
+    "allowSyntheticDefaultImports": true,
+
+    // [ Advanced ]
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "isolatedModules": true,
+
+    // [ Build ]
+    "listFiles": false,
+    "listEmittedFiles": true,
+    "inlineSources": false,
+    "preserveWatchOutput": true,
+    "incremental": true
+  },
+  "exclude": ["node_modules", "build", "dist"]
+}
